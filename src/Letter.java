@@ -13,14 +13,15 @@ public class Letter
     public void writeLetter(String to)
     {
         toName = to;
-        greeting() + to;
+        greeting();
+        System.out.println(to);
         specialMessage();
         closing();
     }
 
     public void greeting()
     {
-        System.out.println("Hello, ");
+        System.out.print("Hello, ");
     }
 
     public void specialMessage()
